@@ -1,0 +1,23 @@
+.App {
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.list_persons {
+  display: inline-block;
+  width: 100px;
+}
+
+
+.list_persons p {
+  font-weight: bold;
+  display: inline;
+}
+
+.ape {
+  margin-left: 20px;
+}
+
+.num {
+  margin-right: 20px;
+}
