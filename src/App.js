@@ -2,15 +2,7 @@ import "./styles.css";
 //import Hola from "./Hello";
 //import Contador from "./Counter";
 //import Cursos from "./Courses";
-import GiaTelefonica from "./GiaTelefonica";
-//import Condicional from "./Conditional";
-//Const es un tipo de declaración de variable
-//que nos dice que la variable es la misma
-//en todo su tiempo de vida.
-
-//Let es un tipo de declaración de variable
-//que nos dice que la variable puede cambiar
-//en el transcurso de su vida.
+import To_do from "./To_do";
 
 const notes = [
   {
@@ -81,7 +73,7 @@ const courses = [
 export default function App() {
   return (
     <div className="App">
-      <GiaTelefonica />
+      <To_do />
     </div>
   );
 }

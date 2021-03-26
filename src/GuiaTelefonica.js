@@ -9,7 +9,7 @@ const GuiaTelefonica = () => {
   const [ newName, setNewName ] = useState('');
   const [ newTele, setNewTele ] = useState('');
 
-  const handleChangeName = e =>{
+  const handleChangeName = e => {
     const { target } = e;
     const { value } = target;
       setNewName(value);
@@ -23,18 +23,18 @@ const GuiaTelefonica = () => {
 
   const addPerson = e => {
     e.preventDefault();
-    if(newTele.length < 10){
-      alert("El número debe ser mayor a 10");
+    if(newTele.length > 10) {
+      alert("El número no debe ser mayor a 10");
     }else{
      let count = 0;
-      for(let i=0;i<=persons.length - 1; i++){
+      for(let i=0;i<=persons.length - 1; i++) {
         persons[0].number.includes() 
-        if(persons[i].number == newTele){
+        if(persons[i].number == newTele) {
           alert("Número existente, pruebe con otro");
           count = 1;
         }
       }
-      if(count == 0){
+      if(count == 0) {
        const NewPersonObjet = {
           name: newName,
           number: newTele
@@ -62,10 +62,10 @@ const GuiaTelefonica = () => {
       </form>
       <h2>Numbers</h2>
       <ul>
-          <li className="list_persons num"><p>Número</p></li>
-          <li className="list_persons"><p>Nombre</p></li>
-          <li className="list_persons ape"><p>Teléfono</p></li>
-        </ul>
+        <li className="list_persons num"><p>Número</p></li>
+        <li className="list_persons"><p>Nombre</p></li>
+        <li className="list_persons ape"><p>Teléfono</p></li>
+      </ul>
       {persons.map((personas, index) => {
         return(
           <ul key={index}>

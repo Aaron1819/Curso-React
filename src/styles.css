@@ -21,3 +21,16 @@
 .num {
   margin-right: 20px;
 }
+.list {
+  border-bottom: 1px solid black;
+  width: 630px;
+}
+
+.title-list {
+  display: inline-block;
+  width: 70%;
+}
+
+.num {
+  width: 15%;
+}

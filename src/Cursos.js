@@ -4,7 +4,7 @@ const Courses = (props) => {
   const { courses } = props;
 
   return (
-    <div className="contenedorCursos">
+    <div>
       <h1>Cursos</h1>
       {courses.map((course) => {
         console.log("course", course);
@@ -32,7 +32,6 @@ const Courses = (props) => {
                 </div>
               );
             })}
-            <h3>Total of {totalExercises} exercises.</h3>
           </div>
         );
       })}
